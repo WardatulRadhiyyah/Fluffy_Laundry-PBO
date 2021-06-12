@@ -20,7 +20,7 @@ namespace Fluffy_Laundry
         [StringLength(20)]
         public string No_Hp { get; set; }
 
-        public double Berat_Cucian { get; set; }
+        public int Berat_Cucian { get; set; }
 
         [Required]
         [StringLength(10)]

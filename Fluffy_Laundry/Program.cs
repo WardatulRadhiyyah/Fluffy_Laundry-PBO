@@ -16,6 +16,8 @@ namespace Fluffy_Laundry
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Login());
+            Application.Run(new Menu());
             Application.Run(new Data_Pemesanan());
         }
     }

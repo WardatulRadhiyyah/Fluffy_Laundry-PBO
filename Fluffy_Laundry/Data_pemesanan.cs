@@ -10,7 +10,7 @@ namespace Fluffy_Laundry
     {
         private string _NamaPemesan;
         private string _NomorHP;
-        private double _Beratkain;
+        private int _Beratkain;
         private DateTime _Tanggalpemesanan;
         private DateTime _Tanggalpengambilan;
         private string _Jenispaket;
@@ -27,7 +27,7 @@ namespace Fluffy_Laundry
             get { return _NomorHP; }
             set { _NomorHP = value; }
         }
-        public double Berat
+        public int Berat
         {
             get { return _Beratkain; }
             set { _Beratkain = value; }

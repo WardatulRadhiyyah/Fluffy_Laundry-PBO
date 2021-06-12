@@ -34,6 +34,7 @@ namespace Fluffy_Laundry
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnsimpan = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tbhargatotal = new System.Windows.Forms.TextBox();
             this.tbharga = new System.Windows.Forms.TextBox();
@@ -46,9 +47,17 @@ namespace Fluffy_Laundry
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnsimpan = new System.Windows.Forms.Button();
             this.Judul = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbpesanan = new System.Windows.Forms.ListBox();
+            this.Input = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +82,7 @@ namespace Fluffy_Laundry
             // 
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.btnsimpan);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.tbhargatotal);
             this.groupBox1.Controls.Add(this.tbharga);
@@ -90,7 +100,7 @@ namespace Fluffy_Laundry
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(22, 80);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(783, 466);
+            this.groupBox1.Size = new System.Drawing.Size(769, 466);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Pemesanan";
@@ -110,6 +120,17 @@ namespace Fluffy_Laundry
             this.label8.Size = new System.Drawing.Size(181, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "Tanggal Pengambilan";
+            // 
+            // btnsimpan
+            // 
+            this.btnsimpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsimpan.Location = new System.Drawing.Point(630, 414);
+            this.btnsimpan.Name = "btnsimpan";
+            this.btnsimpan.Size = new System.Drawing.Size(116, 39);
+            this.btnsimpan.TabIndex = 3;
+            this.btnsimpan.Text = "Simpan";
+            this.btnsimpan.UseVisualStyleBackColor = true;
+            this.btnsimpan.Click += new System.EventHandler(this.btnsimpan_Click);
             // 
             // dateTimePicker1
             // 
@@ -165,6 +186,7 @@ namespace Fluffy_Laundry
             this.tbnama.Name = "tbnama";
             this.tbnama.Size = new System.Drawing.Size(426, 26);
             this.tbnama.TabIndex = 7;
+            this.tbnama.TextChanged += new System.EventHandler(this.tbnama_TextChanged);
             // 
             // label7
             // 
@@ -211,42 +233,119 @@ namespace Fluffy_Laundry
             this.label3.TabIndex = 2;
             this.label3.Text = "Berat Cucian";
             // 
-            // btnsimpan
-            // 
-            this.btnsimpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsimpan.Location = new System.Drawing.Point(689, 565);
-            this.btnsimpan.Name = "btnsimpan";
-            this.btnsimpan.Size = new System.Drawing.Size(116, 39);
-            this.btnsimpan.TabIndex = 3;
-            this.btnsimpan.Text = "Simpan";
-            this.btnsimpan.UseVisualStyleBackColor = true;
-            this.btnsimpan.Click += new System.EventHandler(this.btnsimpan_Click);
-            // 
             // Judul
             // 
             this.Judul.BackColor = System.Drawing.Color.Plum;
             this.Judul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Judul.Location = new System.Drawing.Point(211, 21);
+            this.Judul.Location = new System.Drawing.Point(228, 18);
             this.Judul.Name = "Judul";
-            this.Judul.Size = new System.Drawing.Size(402, 34);
+            this.Judul.Size = new System.Drawing.Size(924, 59);
             this.Judul.TabIndex = 5;
             this.Judul.Text = "Fluffy Laundry";
             this.Judul.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1229, 570);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 42);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Log out";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.lbpesanan);
+            this.groupBox2.Location = new System.Drawing.Point(22, 80);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1320, 471);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Visible = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1035, 346);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(131, 52);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Back";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1035, 253);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(131, 53);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1035, 170);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 51);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lbpesanan
+            // 
+            this.lbpesanan.FormattingEnabled = true;
+            this.lbpesanan.ItemHeight = 20;
+            this.lbpesanan.Location = new System.Drawing.Point(58, 25);
+            this.lbpesanan.Name = "lbpesanan";
+            this.lbpesanan.Size = new System.Drawing.Size(878, 404);
+            this.lbpesanan.TabIndex = 7;
+            // 
+            // Input
+            // 
+            this.Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Input.Location = new System.Drawing.Point(881, 571);
+            this.Input.Name = "Input";
+            this.Input.Size = new System.Drawing.Size(151, 43);
+            this.Input.TabIndex = 9;
+            this.Input.Text = "Input Pesanan";
+            this.Input.UseVisualStyleBackColor = true;
+            this.Input.Click += new System.EventHandler(this.Input_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(1057, 571);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(149, 42);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Daftar Pesanan";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Data_Pemesanan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(833, 624);
+            this.ClientSize = new System.Drawing.Size(1378, 624);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.Input);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Judul);
-            this.Controls.Add(this.btnsimpan);
             this.Controls.Add(this.groupBox1);
             this.Name = "Data_Pemesanan";
             this.Text = "Data Pemesanan";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -272,6 +371,14 @@ namespace Fluffy_Laundry
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnsimpan;
         private System.Windows.Forms.Label Judul;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ListBox lbpesanan;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Input;
+        private System.Windows.Forms.Button button6;
     }
 }
 

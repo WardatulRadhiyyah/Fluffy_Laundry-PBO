@@ -60,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -74,11 +75,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data_pemesanan.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Fluffy Laundry.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fluffy Laundry.Designer.cs">
       <DependentUpon>Fluffy Laundry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Paket cucian.cs" />
     <Compile Include="Paket_A.cs" />
@@ -92,6 +106,12 @@
     <EmbeddedResource Include="Fluffy Laundry.resx">
       <DependentUpon>Fluffy Laundry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -123,6 +144,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DaftarPelanggan.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\floral-design %281%293.png" />
+    <None Include="Resources\145374.jpg" />
+    <None Include="Resources\floral-design %281%292.png" />
+    <None Include="Resources\floral-design %281%291.png" />
+    <None Include="Resources\floral-design %281%29.png" />
+    <None Include="Resources\floral-design.png" />
+    <None Include="Resources\washing-machine2.png" />
+    <None Include="Resources\washing-machine1.png" />
+    <None Include="Resources\washing-machine %281%29.png" />
+    <None Include="Resources\laundry-basket.png" />
+    <None Include="Resources\washing-machine.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
